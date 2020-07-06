@@ -2,7 +2,7 @@ const setupBackground = (base64) => {
     let styleElement = (document.querySelector('#whatsapp_background_changer') != null) ? document.querySelector('#whatsapp_background_changer'): document.createElement('style');
     styleElement.setAttribute('id', 'whatsapp_background_changer');
     styleElement.innerHTML = `
-        [data-asset-chat-background-light] {
+       #main > div:first-child {
             background-image: url('${base64}');
             background-size: cover;
             background-repeat: no-repeat;
